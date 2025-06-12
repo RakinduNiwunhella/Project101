@@ -1,0 +1,18 @@
+body{
+    background-color: #D8D7D9;
+}
+.heading-text {
+  font-size: 80px;
+}
+
+@media (max-width: 992px) {
+  .heading-text {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-text {
+    font-size: 40px;
+  }
+}
