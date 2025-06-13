@@ -65,6 +65,27 @@
   .submit {
     text-align: right;
   }
+
+  #submitbtn {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 11px;
+      cursor: pointer;
+      /* transition: background-color 0.3s ease; */
+  }
+
+  #submitbtn:hover {
+    background-color: #007a0e;
+    transition: 0.5s;
+  }
+
   
   .remember input {
     margin-right: 8px;
