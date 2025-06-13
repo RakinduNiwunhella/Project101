@@ -61,6 +61,10 @@
     font-size: 0.9rem;
     margin-bottom: 15px;
   }
+
+  .submit {
+    text-align: right;
+  }
   
   .remember input {
     margin-right: 8px;
@@ -124,7 +128,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 92%;
+    object-position: 94%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
   }
