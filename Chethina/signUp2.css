@@ -11,7 +11,7 @@ body, html {
 }
 
 .background {
-  background: linear-gradient(rgba(74, 42, 17, 0.8), rgba(83, 82, 82, 0.8)), url('signUp2Images/image3.png') center/cover no-repeat;
+  background: linear-gradient(rgba(36, 16, 1, 0.7), rgba(198, 168, 168, 0.8)), url('signUp2Images/image3.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -85,7 +85,6 @@ body, html {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: background 0.3s ease;
 }
 
 .social-btn:hover {
