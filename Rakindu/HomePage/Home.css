@@ -1,18 +1,120 @@
-body{
-    background-color: #D8D7D9;
+.hero {
+      background-color: #e6e6e6;
+      padding: 80px 0;
+      color: #013159;
+    }
+    h2{
+      color: #013159;
+    }
+    .navbar-nav{
+      color:#013159;
+    }
+    .search-bar {
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+    .btn-golden {
+      background-color: #b5a132;
+      color: white;
+      font-weight: bold;
+      border-radius: 12px;
+      padding: 10px 30px;
+    }
+    .btn-golden:hover {
+      background-color: #a0922c;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .doctor-img {
+      position: relative;
+      z-index: 2;
+      object-position: top;
+    }
+    .bg-img {
+      position: absolute;
+      z-index: 1;
+      max-width: 160%;
+      right: 20px;
+    }
+    .img-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+    .how-it-works .step-box {
+  background-color: #d6ce8d;
+  color: #003049;
+  height: 100%;
+  transition: transform 0.3s;
 }
-.heading-text {
-  font-size: 80px;
+.how-it-works .step-box:hover {
+  transform: translateY(-5px);
 }
 
-@media (max-width: 992px) {
-  .heading-text {
-    font-size: 60px;
-  }
+.specialty-card {
+  background-color: #b5a132;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
-
-@media (max-width: 576px) {
-  .heading-text {
-    font-size: 40px;
-  }
+.specialty-card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.specialty-info {
+  background-color: #b5a132;
+  color: white;
+}
+.specialty-info a {
+  color: #e1e1e1;
+  text-decoration: underline;
+}
+.specialty-card:hover {
+  transform: translateY(-5px);
+}
+.img-special{
+  height: 200px
+}
+.doctor-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+.doctor-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+.doctor-info {
+  background-color: #003049;
+  color: white;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn-book {
+  background-color: #b5a132;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.btn-book:hover {
+  background-color: #a0922c;
+  color: white;
 }

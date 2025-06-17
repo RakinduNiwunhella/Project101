@@ -5,76 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>eDoctors</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero {
-      background-color: #e6e6e6;
-      padding: 80px 0;
-    }
-    .search-bar {
-      max-width: 500px;
-      margin-bottom: 20px;
-    }
-    .btn-golden {
-      background-color: #b5a132;
-      color: white;
-      font-weight: bold;
-      border-radius: 12px;
-      padding: 10px 30px;
-    }
-    .btn-golden:hover {
-      background-color: #a0922c;
-    }
-    .logo {
-      font-weight: bold;
-      font-size: 24px;
-    }
-    .doctor-img {
-      position: relative;
-      z-index: 2;
-    }
-    .bg-img {
-      position: absolute;
-      z-index: 1;
-      max-width: 160%;
-      right: 20px;
-    }
-    .img-wrapper {
-      position: relative;
-      display: inline-block;
-    }
-    .how-it-works .step-box {
-  background-color: #d6ce8d;
-  color: #003049;
-  height: 100%;
-  transition: transform 0.3s;
-}
-.how-it-works .step-box:hover {
-  transform: translateY(-5px);
-}
-
-.specialty-card {
-  background-color: #b5a132;
-  color: white;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-.specialty-card img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.specialty-info {
-  background-color: #b5a132;
-  color: white;
-}
-.specialty-info a {
-  color: #e1e1e1;
-  text-decoration: underline;
-}
-.specialty-card:hover {
-  transform: translateY(-5px);
-}
-  </style>
+  <link rel="stylesheet" href="Home.css">
+    
 </head>
 <body>
 
@@ -162,7 +94,7 @@
       <!-- Card 1 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="specialty-card rounded overflow-hidden">
-          <img src="images/primary-care.jpg" class="img-fluid" alt="Primary & General Care">
+          <img src="images/specialties/male-working-as-paediatrician.jpg" class="img-fluid img-special" alt="Primary & General Care">
           <div class="specialty-info p-3">
             <h6>Primary & General Care</h6>
             <a href="#">View Doctors</a>
@@ -172,7 +104,7 @@
       <!-- Card 2 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="specialty-card rounded overflow-hidden">
-          <img src="images/dental.jpg" class="img-fluid" alt="Dental & Oral Health">
+          <img src="images/specialties/dentist-hands-working-young-woman-patient-with-dental-tools.jpg" class=" img-fluid img-special" alt="Dental & Oral Health">
           <div class="specialty-info p-3">
             <h6>Dental & Oral Health</h6>
             <a href="#">View Doctors</a>
@@ -182,7 +114,7 @@
       <!-- Card 3 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="specialty-card rounded overflow-hidden">
-          <img src="images/ayurvedic.jpg" class="img-fluid" alt="Ayurvedic & Holistic">
+          <img src="images/specialties/people-enjoying-yerba-mate-tea.jpg" class="img-fluid img-special" alt="Ayurvedic & Holistic">
           <div class="specialty-info p-3">
             <h6>Ayurvedic & Holistic</h6>
             <a href="#">View Doctors</a>
@@ -192,7 +124,7 @@
       <!-- Card 4 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="specialty-card rounded overflow-hidden">
-          <img src="images/specialised.jpg" class="img-fluid" alt="Specialised Care">
+          <img src="images/specialties/doctor-looking-camera-after-typing-computer-modern-private-hospital-clinic-working-consultation-room-while-nurse-back-is-talking-with-patient-glass-walls.jpg" class="img-fluid img-special" alt="Specialised Care">
           <div class="specialty-info p-3">
             <h6>Specialised Care</h6>
             <a href="#">View Doctors</a>
@@ -201,6 +133,58 @@
       </div>
     </div>
     <a href="#" class="text-primary mt-3 d-inline-block">View More</a>
+  </div>
+</section>
+<!-- Featured Doctors -->
+<section class="featured-doctors py-5" style="background-color: #e6e6e6;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Featured Doctors</h2>
+    <div class="row justify-content-center">
+      <!-- Doctor 1 -->
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="doctor-card w-100 text-center">
+          <img src="images/doctors/Doc1.jpg" class="img-fluid doctor-image" alt="Dr. Sarah Taylor">
+          <div class="doctor-info">
+            <h6 class="fw-bold mb-1">Dr. Sarah Taylor</h6>
+            <p class="mb-2">Dermatology</p>
+            <a href="#" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Doctor 2 -->
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="doctor-card w-100 text-center">
+          <img src="images/doctors/Doc2.jpg" class="img-fluid doctor-image" alt="Dr. James Wilson">
+          <div class="doctor-info">
+            <h6 class="fw-bold mb-1">Dr. James Wilson</h6>
+            <p class="mb-2">Cardiology</p>
+            <a href="#" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Doctor 3 -->
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="doctor-card w-100 text-center">
+          <img src="images/doctors/Doc3.jpg" class="img-fluid doctor-image" alt="Dr. Emily Johnson">
+          <div class="doctor-info">
+            <h6 class="fw-bold mb-1">Dr. Emily Johnson</h6>
+            <p class="mb-2">Dental</p>
+            <a href="#" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Doctor 4 -->
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="doctor-card w-100 text-center">
+          <img src="images/doctors/Doc4.jpg" class="img-fluid doctor-image" alt="Dr. Michael Brown">
+          <div class="doctor-info">
+            <h6 class="fw-bold mb-1">Dr. Michael Brown</h6>
+            <p class="mb-2">Ayurvedic & Holistic</p>
+            <a href="#" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
