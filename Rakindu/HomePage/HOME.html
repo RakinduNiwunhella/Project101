@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eDoctors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-color: #e6e6e6;
+      padding: 80px 0;
+    }
+    .search-bar {
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+    .btn-golden {
+      background-color: #b5a132;
+      color: white;
+      font-weight: bold;
+      border-radius: 12px;
+      padding: 10px 30px;
+    }
+    .btn-golden:hover {
+      background-color: #a0922c;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .doctor-img {
+      position: relative;
+      z-index: 2;
+    }
+    .bg-img {
+      position: absolute;
+      z-index: 1;
+      max-width: 160%;
+      right: 20px;
+    }
+    .img-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+    .how-it-works .step-box {
+  background-color: #d6ce8d;
+  color: #003049;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.how-it-works .step-box:hover {
+  transform: translateY(-5px);
+}
+
+.specialty-card {
+  background-color: #b5a132;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.specialty-card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.specialty-info {
+  background-color: #b5a132;
+  color: white;
+}
+.specialty-info a {
+  color: #e1e1e1;
+  text-decoration: underline;
+}
+.specialty-card:hover {
+  transform: translateY(-5px);
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo text-primary" href="#">
+        <img src="images/hospital-logo-design-vector-medical-cross.png" alt="logo" style="height: 30px; margin-right: 8px;">
+        eDoctors
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Find a Doctor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Specialties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold mb-4">Book Your Doctor Appointment Online</h1>
+          <div class="input-group search-bar">
+            <input type="text" class="form-control" placeholder="Search for doctors" />
+
+          </div>
+          <button class="btn btn-golden">Find a Doctor</button>
+        </div>
+
+        <!-- Image -->
+        <div class="col-md-6 text-center">
+          <div class="img-wrapper">
+            <img src="images/Untitled-1.png" alt="background shape" class="bg-img" >
+            <img src="images/doctor-taking-blood-sample-old-patient-hospital-man-doing-checkup-examination-clinic-senior-sitting-chair.png" alt="doctor with patient" class="img-fluid doctor-img" style="max-height: 600px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How It Works -->
+<section class="how-it-works py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">How It Works</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="step-box p-4 rounded">
+          <img src="images/how-it-works/doctor.png" alt="Search Icon" class="mb-3" width="100">
+          <h5 class="fw-bold">Search</h5>
+          <p>Find doctors by speciality or name</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="step-box p-4 rounded">
+          <img src="images/how-it-works/calender.png" alt="Book Icon" class="mb-3" width="100">
+          <h5 class="fw-bold">Book</h5>
+          <p>Schedule your appointment easily</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="step-box p-4 rounded">
+          <img src="images/how-it-works/consultent.png" alt="Consult Icon" class="mb-3" width="100">
+          <h5 class="fw-bold">Consult</h5>
+          <p>Get a consultation with your doctor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Specialties -->
+<section class="specialties py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Specialties</h2>
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="specialty-card rounded overflow-hidden">
+          <img src="images/primary-care.jpg" class="img-fluid" alt="Primary & General Care">
+          <div class="specialty-info p-3">
+            <h6>Primary & General Care</h6>
+            <a href="#">View Doctors</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="specialty-card rounded overflow-hidden">
+          <img src="images/dental.jpg" class="img-fluid" alt="Dental & Oral Health">
+          <div class="specialty-info p-3">
+            <h6>Dental & Oral Health</h6>
+            <a href="#">View Doctors</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="specialty-card rounded overflow-hidden">
+          <img src="images/ayurvedic.jpg" class="img-fluid" alt="Ayurvedic & Holistic">
+          <div class="specialty-info p-3">
+            <h6>Ayurvedic & Holistic</h6>
+            <a href="#">View Doctors</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="specialty-card rounded overflow-hidden">
+          <img src="images/specialised.jpg" class="img-fluid" alt="Specialised Care">
+          <div class="specialty-info p-3">
+            <h6>Specialised Care</h6>
+            <a href="#">View Doctors</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="text-primary mt-3 d-inline-block">View More</a>
+  </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
