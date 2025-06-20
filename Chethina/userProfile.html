@@ -2,99 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>User Profile</title>
-  <link rel="stylesheet" href="userProfile.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="userProfile.css">
 </head>
 <body>
-  <div class="profile-container">
-    <div class="profile-header">
-      <div class="avatar">
-        <i class="fas fa-user-circle"></i>
-      </div>
-      <h1>User's Profile</h1>
-    </div>
+  <nav>
+    <div class="logo">DOCTORS</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Find a Doctor</a></li>
+      <li><a href="#">Appointments</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+  </nav>
 
-    <div class="profile-content">
-      <div class="profile-form" style="padding: 80px;">
-        <form>
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text">
-            <label>Email</label>
-            <input type="email">
-          </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text">
-            <label>Contact No.</label>
-            <input type="text">
-          </div>
-          <div class="form-group">
-            <label>Date Of Birth</label>
-            <input type="date">
-            <label>Gender</label>
-            <input type="text">
-          </div>
-          <div class="form-group">
-            <label>NIC No.</label>
-            <input type="text">
-            <label>Signature</label>
-            <input type="text">
-          </div>
-          <div class="form-group full-width">
-            <label>Address</label>
-            <input type="text" placeholder="line 1">
-            <input type="text" placeholder="line 2">
-            <input type="text" placeholder="line 3 (Optional)">
-          </div>
-          <div class="form-actions">
-            <button type="button">Edit Profile</button>
-          </div>
-        </form>
-      </div>
-
-      <div class="profile-sidebar">
-        <div class="card">
-          <h3>My Appointments</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+  <div class="container">
+    <section class="profile-section">
+      <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">My Profile</h2>
+      <div class="profile-header">
+        <img src="loginImages/image.png" alt="Profile Picture">
+        <div>
+          <h3 style="font-size: 20px; font-weight: bold;">John Doe</h3>
+          <input type="email" value="example@example.com" style="margin-top: 8px; padding: 8px; border: 1px solid #ccc; border-radius: 6px; width: 100%; max-width: 300px;">
         </div>
-        <div class="card">
-          <h3>Appointment History</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-           <li></li>
-          </ul>
+          <button class="edit-button">Edit</button>
+      </div>
+      <div class="form-grid">
+        <div>
+          <label>Phone</label>
+          <input type="text" value="(123) 456-7890">
+        </div>
+        <div>
+          <label>Address</label>
+          <input type="text" value="123 Main St, Hometown">
+        </div>
+        <div>
+          <label>Date of birth</label>
+          <input type="text" value="January 1, 1880">
+        </div>
+        <div>
+          <label>Gender</label>
+          <select>
+            <option selected>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
         </div>
       </div>
-    </div>
+      <button class="save-button" style="a">Save Changes</button>
+
+    </section>
+    
+
+    <section class="history-section">
+      <h3 style="font-size: 20px; font-weight: bold;">Appointment History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Specialty</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dr. Jane Smith</td>
+            <td>April 19, 2024</td>
+            <td>Dermatology</td>
+            <td><span class="status">Completed</span></td>
+          </tr>
+          <tr>
+            <td>Dr. James Wilson</td>
+            <td>March 22, 2024</td>
+            <td>Pediatrics</td>
+            <td><span class="status">Completed</span></td>
+          </tr>
+          <tr>
+            <td>Dr. Susan Lee</td>
+            <td>March 5, 2024</td>
+            <td>Cardiology</td>
+            <td><span class="status">Completed</span></td>
+          </tr>
+          <tr>
+            <td>Dr. Robert Brown</td>
+            <td>February 20, 2024</td>
+            <td>Orthopedic</td>
+            <td><span class="status">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </div>
 </body>
 </html>
