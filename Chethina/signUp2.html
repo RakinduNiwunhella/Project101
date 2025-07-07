@@ -12,13 +12,15 @@
     <div class="signup-box">
       <div class="form-section">
         <h2>Signup</h2>
-        <form>
-          <input type="text" placeholder="First name" required />
-          <input type="text" placeholder="Last name" required />
-          <input type="text" placeholder="NIC No." required />
-          <input type="email" placeholder="E-mail" required />
-          <input type="password" placeholder="Password" required />
-          <input type="password" placeholder="Confirm Pass" required />
+        <form action="connection.php" method="POST">
+          <input type="text" name="f_name" placeholder="First name" required />
+          <input type="text" name="l_name" placeholder="Last name" required />
+          <input type="text" name="p_nic" placeholder="NIC No." required />
+          <input type="email" name="email" placeholder="E-mail" required />
+          <input type="password" name="password" placeholder="Password (5-10 characters only!)" id="pass" required />
+          <input type="password" placeholder="Confirm Pass" id="conpass" required />
+          <input type="submit" id="submit">
+
         </form>
       </div>
 
@@ -33,10 +35,13 @@
         <br>
         <div class="fab fa-x-twitter"> Twitter</div>
         <br>
-        <a href="signUp.html" class="doctor-link">Register as a Doctor!</a>
-        <a href="login.html" class="doctor-link">Already have account? Login!</a>
+        <a href="signUp.php" class="doctor-link">Register as a Doctor!</a>
+        <a href="login.php" class="doctor-link">Already have account? Login!</a>
+        <br>
+        <p id="message"></p>
       </div>
     </div>
   </div>
+  <script src="signUp2.js"></script>
 </body>
 </html>
