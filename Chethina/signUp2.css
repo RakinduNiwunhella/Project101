@@ -101,3 +101,15 @@ body, html {
 .doctor-link:hover {
   text-decoration: underline;
 }
+
+#submit{
+  background-color: rgb(188, 0, 0);
+  color: aliceblue;
+  
+}
+
+#submit:hover{
+  background-color: rgb(10, 154, 0);
+  cursor: pointer;
+  transition: 0.25s;
+}
